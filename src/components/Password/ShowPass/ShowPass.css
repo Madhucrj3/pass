@@ -1,0 +1,65 @@
+.ShowPassContainer{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid #b6c3ca;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 8px;
+    padding: 0.4rem;
+    flex-wrap: wrap;
+}
+.hovertext {
+    position: relative;
+  }
+.hovertext:before {
+    content: attr(title);
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+.showassComb{
+    display: flex;
+    align-items: center;
+}
+.ShowPassContainer3 img{
+    width: 20px;
+    height: 20px;
+}
+.ShowPassContainer1
+{
+    margin-right: 1rem;
+    color:#fff;
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.ShowPassContainer2 p{
+    color: #fff;
+    font-size: 12px;
+    margin: 6px;
+}
+@media only screen and (max-width: 576px) {
+    .ShowPassContainer{
+        width: 300px;
+    }
+}
